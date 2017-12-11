@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>忘记密码</title>
+<link  href="css/dist.css" rel="stylesheet" type="text/css"/>
+<link  href="css/zh.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body class="zhbody">
+        <div class="zh-bg"> <img src="images/bg.png" alt=""> </div>
+    <div class="zh-heard"><a href="index.html"><i class="zicon">&#xe70b;</i>返回登录</a>重置密码</div>
+    <div class="zh-removepwd">
+        <div class="user-choose ub ub-ac">
+            <div class="user-chooseli active trn" sid="tea"><img src="images/switchicon_teacher.png" alt=""><span>我不是学生</span></div>
+            <div class="user-chooseli trn" sid="stu"><img src="images/switchicon_student.png" alt=""><span>我是学生</span></div>
+        </div>
+        <div  class="forms">
+        <form id="tea" class="formbox open trn">
+            <div class="zh-login-list">
+                <div class="tit clear3"><i class="zicon">&#xe60c;</i>手机号码<span class="err-tit">请输入手机号</span></div>
+                <input type="text" class="zh-input" placeholder="请输入手机号" >
+            </div>
+            <div class="zh-login-list clear3">
+                    <div class="tit clear3"><i class="zicon">&#xe614;</i>手机验证码<span class="err-tit">请输入验证码</span></div>
+                    <input type="text" class="zh-input yzm" placeholder="请输入验证码">
+                    <div class="zh-yzm-img"><a class="zh-login-button">获取验证码</a></div>
+            </div>
+            <div class="zh-login-list">
+                <div class="tit clear3"><i class="zicon">&#xe6d1;</i>设置新密码<span class="err-tit">请输入密码</span></div>
+                <input type="password" class="zh-input" placeholder="至少6位数字" >
+            </div>
+            <div class="zh-login-list">
+                    <div class="tit clear3"><i class="zicon">&#xe6d1;</i>确认新密码<span class="err-tit">请输入密码</span></div>
+                    <input type="password" class="zh-input" placeholder="跟上面的新密码保持一样" >
+                </div>
+             
+            <a class="zh-login-button">完成</a>
+        </form>
+        <form id="stu" class="formbox trn">
+                <div class="zh-login-list">
+                        <div class="tit clear3"><i class="zicon">&#xe642;</i>账号信息<span class="err-tit">请输入账号</span></div>
+                        <input type="text" class="zh-input" placeholder="请输入账号" id="user">
+                </div>
+                <div class="zh-login-list">
+                    <div class="tit clear3"><i class="zicon">&#xe60c;</i>手机号码 <a class="zh-sbut active">家长手机</a><a class="zh-sbut">本人手机</a></div>
+                    <input type="text" class="zh-input" placeholder="请输入手机号" >
+                </div>
+                <div class="zh-login-list clear3">
+                        <div class="tit clear3"><i class="zicon">&#xe614;</i>手机验证码<span class="err-tit">请输入验证码</span></div>
+                        <input type="text" class="zh-input yzm" placeholder="请输入验证码">
+                        <div class="zh-yzm-img"><a class="zh-login-button">获取验证码</a></div>
+                </div>
+                <div class="zh-login-list">
+                    <div class="tit clear3"><i class="zicon">&#xe6d1;</i>设置新密码<span class="err-tit">请输入密码</span></div>
+                    <input type="password" class="zh-input" placeholder="至少6位数字" >
+                </div>
+                <div class="zh-login-list">
+                        <div class="tit clear3"><i class="zicon">&#xe6d1;</i>确认新密码<span class="err-tit">请输入密码</span></div>
+                        <input type="password" class="zh-input" placeholder="跟上面的新密码保持一样" >
+                    </div>
+                 
+                <a class="zh-login-button">完成</a>
+            </form>
+        </div>
+    </div>
+
+
+
+<script src="js/sea.js"></script>
+<script src="js/seaconfig2.0.js"></script>
+<script>
+seajs.use(["jq","run"],function(j,r){
+    r.remove();
+});
+</script>
+</body>
+</html>

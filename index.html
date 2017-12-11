@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>用户登录</title>
+<link  href="css/dist.css" rel="stylesheet" type="text/css"/>
+<link  href="css/zh.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body class="zhbody">
+    <div class="zh-bg"> <img src="images/bg.png" alt=""> </div>
+<div class="zh-login-box">
+    <div class="zh-login-title ">用户登录</div>
+    <form>
+        <div class="zh-login-list">
+            <div class="tit"><i class="zicon">&#xe642;</i>账号<span class="err-tit">请输入账号</span></div>
+            <input type="text" class="zh-input" placeholder="请输入手机号或学籍号或账号" id="user">
+        </div>
+        <div class="zh-login-list">
+            <div class="tit"><i class="zicon">&#xe6d1;</i>密码<span class="err-tit">请输入密码</span></div>
+            <input type="password" class="zh-input" placeholder="请输入密码" id="pwd">
+        </div>
+        <!-- <div class="zh-login-list clear3">
+            <div class="tit"><i class="zicon">&#xe614;</i>验证码<span class="err-tit">请输入验证码</span></div>
+            <input type="text" class="zh-input yzm" placeholder="请输入右侧显示的字母">
+            <div class="zh-yzm-img"><img src="images/yzm.png" alt=""></div>
+        </div> -->
+        <a class="zh-login-button">登录</a>
+    </form>
+    <a href="index_remove.html" class="zh-link">忘记密码</a>
+</div>
+
+
+<script src="js/sea.js"></script>
+<script src="js/seaconfig2.0.js"></script>
+<script>
+seajs.use(["jq","run"],function(j,r){
+    r.login(); 
+});
+</script>
+</body>
+</html>

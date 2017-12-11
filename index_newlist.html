@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>全部消息</title>
+    <link href="css/dist.css" rel="stylesheet" type="text/css" />
+    <link href="css/zh.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="zhbody">
+        <div class="zh-bg"> <img src="images/bg.png" alt=""> </div>
+    <div class="zh-heard ub ub-ac po_r">
+        <div class="zh-select">
+            <div class="zh-sel-value"> <span>全部应用</span> <i class="zicon">&#xe679;</i></div>
+            <div class="zh-sel-box">
+                <div class="zh-sel-option">选项1</div>
+                <div class="zh-sel-option">选项2</div>
+            </div>
+        </div>
+        <div class="zh-select">
+            <div class="zh-sel-value"> <span>全部</span> <i class="zicon">&#xe679;</i></div>
+            <div class="zh-sel-box">
+                <div class="zh-sel-option">2选项1</div>
+                <div class="zh-sel-option">2选项2</div>
+            </div>
+        </div>
+    </div>
+    <div class="zh-newsbox clear3">
+
+        <div class="zh-newslist ub  ub-ac">
+            <div class="newslist-img"><img src="images/xyzf.png" alt=""></div>
+            <div class="newslist-text ub-f2">
+                <div class="onetext"><label>车辆管理<b class="tips">NEW!</b></label></div>
+                <div class="twotext">你有新的消息！</div>
+            </div>
+            <div class="ub-f1 t_r">2017-12-08 11:00</div>
+        </div>
+
+        <div class="zh-newslist ub  ub-ac">
+                <div class="newslist-img"><img src="images/xyzf.png" alt=""></div>
+                <div class="newslist-text ub-f2">
+                    <div class="onetext"><label>车辆管理<b class="tips">NEW!</b></label></div>
+                    <div class="twotext">你有新的消息！</div>
+                </div>
+                <div class="ub-f1 t_r">2017-12-08 11:00</div>
+            </div>
+
+
+        <div class="zh-newslist zh-nodata">
+            <i class="zicon">&#xe6ce;</i>
+            <span>暂无消息</span>
+        </div>
+
+    </div>
+
+
+    <script src="js/sea.js"></script>
+    <script src="js/seaconfig2.0.js"></script>
+    <script>
+        seajs.use(["jq", "run"], function (j, r) {
+            $(".zh-select").each(function(i){
+                $(this).find(".zh-sel-value").click(function(){
+                    $(this).parent().find(".zh-sel-box").slideToggle(200);
+                    $(this).parent().siblings().find(".zh-sel-box").slideUp(200);
+                });
+                $(this).find(".zh-sel-option").click(function(){
+                    $(this).addClass("active").siblings().removeClass("active");
+                    $(this).parent().slideUp(200);
+                    $(this).parents(".zh-select").find(".zh-sel-value span").html($(this).html());
+                });
+
+            })
+        });
+    </script>
+</body>
+
+</html>
