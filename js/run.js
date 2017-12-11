@@ -45,8 +45,29 @@ define(function (require, exports) { //dedine闭包
 		})
 	}
 
-	exports.index = function () {
-		
+	exports.indexs = function () {
+		$(".app-list.app_").each(function(i){
+			if(i>=7){
+				$(this).addClass("app-mores");
+				$(".more").show();
+			}
+		});
+		$(".more").click(function(){
+			$(".app-mores").toggle();
+		})
+	}
+	exports.newslist = function () {
+		$(".zh-select").each(function(i){
+			$(this).find(".zh-sel-value").click(function(){
+				$(this).parent().find(".zh-sel-box").slideToggle(200);
+				$(this).parent().siblings().find(".zh-sel-box").slideUp(200);
+			});
+			$(this).find(".zh-sel-option").click(function(){
+				$(this).addClass("active").siblings().removeClass("active");
+				$(this).parent().slideUp(200);
+				$(this).parents(".zh-select").find(".zh-sel-value span").html($(this).html());
+			});
+		})
 	}
 
 

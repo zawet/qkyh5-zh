@@ -60,18 +60,8 @@
     <script src="js/seaconfig2.0.js"></script>
     <script>
         seajs.use(["jq", "run"], function (j, r) {
-            $(".zh-select").each(function(i){
-                $(this).find(".zh-sel-value").click(function(){
-                    $(this).parent().find(".zh-sel-box").slideToggle(200);
-                    $(this).parent().siblings().find(".zh-sel-box").slideUp(200);
-                });
-                $(this).find(".zh-sel-option").click(function(){
-                    $(this).addClass("active").siblings().removeClass("active");
-                    $(this).parent().slideUp(200);
-                    $(this).parents(".zh-select").find(".zh-sel-value span").html($(this).html());
-                });
-
-            })
+            r.newslist();
+            
         });
     </script>
 </body>

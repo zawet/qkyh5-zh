@@ -69,6 +69,9 @@
 .app-list{ float: left; width: 25%; margin-bottom: 15px; display: block; height: 80px;}
 .app-list img{ display: block; width: 55%; margin: 0 auto}
 .app-list span{ display: block; text-align: center; font-size: 14px; color: #535353; line-height: 26px;}
+.app-list.app-mores{ display:none;}
+.app-list.more{display: none;}
+.app-list.more span{ color: #2aa0fc; }
 
 .zh-newslist{ width: 100%; border: 1px solid #eee; padding-top: 10px; border-radius: 4px; margin-bottom: 15px; background: #fff;}
 .zh-newslist:hover{ border-color:#d1d1d1; }

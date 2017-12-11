@@ -4,11 +4,11 @@
 /*各应用独立图标字体架构*/
 @font-face {
   font-family: 'zicon';  /* project id 500516 */
-  src: url('//at.alicdn.com/t/font_500516_n8hnd3ejv4y4x6r.eot');
-  src: url('//at.alicdn.com/t/font_500516_n8hnd3ejv4y4x6r.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_500516_n8hnd3ejv4y4x6r.woff') format('woff'),
-  url('//at.alicdn.com/t/font_500516_n8hnd3ejv4y4x6r.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_500516_n8hnd3ejv4y4x6r.svg#iconfont') format('svg');
+  src: url('../iconfont/iconfont.eot'); /* IE9*/
+  src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../iconfont/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../iconfont/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .zicon {
